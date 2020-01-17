@@ -22,3 +22,4 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 
 # aliases
 alias ll='ls -la'
+alias ..='cd ..'
