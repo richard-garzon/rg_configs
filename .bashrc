@@ -91,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias ..='cd ..'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -120,6 +121,7 @@ fi
 green="\[\033[0;32m\]"
 blue="\[\033[0;34m\]"
 purple="\[\033[0;35m\]"
+red="\[\033[0;31m\]"
 reset="\[\033[0m\]"
 
 # Change command prompt
@@ -130,4 +132,6 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+export PS1="$purple\u$green\$(__git_ps1)$blue \W $red◊ $reset"
+
+eval $(thefuck --alias fuck)
