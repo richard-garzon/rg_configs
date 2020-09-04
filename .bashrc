@@ -136,4 +136,7 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 # '\W' adds the name of the current directory
 export PS1="$purple\u$green\$(__git_ps1)$blue \W $red◊ $reset"
 
+export PATH=$PATH:/usr/local/go/bin
+
 eval $(thefuck --alias fuck)
+eval "(direnv hook bash)"
