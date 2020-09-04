@@ -117,9 +117,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+source ~/.git-completion.bash
+
 # colors!
 green="\[\033[0;32m\]"
-blue="\[\033[0;34m\]"
+blue="\[\033[0;36m\]"
 purple="\[\033[0;35m\]"
 red="\[\033[0;31m\]"
 reset="\[\033[0m\]"
