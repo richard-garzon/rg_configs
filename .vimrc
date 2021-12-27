@@ -73,7 +73,7 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 " set smarttab
 
 " set autoindent and use hard tabs
-set autoindent noexpandtab tabstop=2 shiftwidth=2
+set autoindent expandtab softtabstop=4 shiftwidth=4
 
 " This shows what you are typing as a command.
 set showcmd
